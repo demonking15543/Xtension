@@ -1,0 +1,19 @@
+*.pyc
+*.log
+blog_project/_pycache
+blog_project/settings/dev.py
+LICENSE.txt
+README.md
+.vscode
+blog_project/asgi.py
+.cache
+.py, cover
+.pipenv-version
+env/
+blog_cache/
+
+blog/migrations
+blog/tests
+slugignore.txt
+blog.log
+

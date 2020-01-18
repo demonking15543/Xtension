@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class=" card mb-3">
+    {% if request.user.profile.photo %}
+    <img src="{{request.user.profile.photo.url}}" alt="image not found" style="width:300px; height: 300px;">
+    {% else %}
+    <img src="{% static 'icon/avtar.png'%}" alt="image not found" style="width:300px; height: 300px;">
+
+    {% endif %}
+
+
+
+    <h4 class="card-title">Username: <small>{{request.user.username}}</small></h4>
+    <h4 class="card-title">First name: <small>{{request.user.first_name}}</small></h4>
+    <h4 class="card-title">Last name: <small>{{request.user.last_name}}</small></h4>
+    <h4 class="card-title">Dob: <small>{{request.user.profile.dob}}</small></h4>
+    <h4 class="card-title">Email : <small>{{request.user.email}}</small></h4>
+    <h4 class="card-title">Contact: <small>{{request.user.profile.mobile}}</small></h4>
+    <h4 class="card-title"> Find me here: <small>{{request.user.profile.website}}</small></h4>
+    <h4 class="card-title">Description: <small>{{request.user.profile.description}}</small></h4>
+    <h4 class="card-title">Country: <small>{{request.user.profile.country}}</small></h4>
+    <h4 class="card-title">City: <small>{{request.user.profile.city}}</small></h4>
+    <h4 class="card-title">Followers-following : <a href="{% url 'blog:followers_following_list' %}">-></a></h4>
+
+    <a href="{% url 'edit_profile' %}">edit profile</a>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+aniso8601 = "==5.1.0"
+relativetimebuilder = "<2.0.0"
+django = "*"
+django-crispy-forms = "*"
+django-social-share = "*"
+django-taggit = "*"
+social-auth-app-django = "*"
+pillow = "*"
+psycopg2 = "*"
+dj-database-url = "*"
+whitenoise = "*"
+gunicorn = "==19.9.0"
+python-decouple = "*"
+
+
+[requires]
+python_version = "3.7"
