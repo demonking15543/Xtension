@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+{% if author_details %}
+{% if author_details.profile.photo %}
+<img src="{{author_details.profile.photo.url}}" alt="image not found" style="width:300px; height: 300px;">
+{% else %}
+<img src="{% static 'icon/avtar.png' %}" alt="image not found" style="width:300px; height: 300px;">
+{% endif %}
+
+<h4>author name <small>{{author_details.username}}</small></h4>
+<h4> About: <small>{{author_details.profile.description}}</small></h4>
+<h4>Total published post: <small>{{post}}</small></h4>
+
+
+{% endif %}
+<div id="follow-section">
+    {% include 'blog/follow.html' %}
+</div>
+<small class="text-muted">Total Following: {{following}}</small>
+
+{% endblock %}
