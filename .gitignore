@@ -12,7 +12,6 @@ blog_project/asgi.py
 env/
 blog_cache/
 
-blog/migrations
 blog/tests
 slugignore.txt
 blog.log
