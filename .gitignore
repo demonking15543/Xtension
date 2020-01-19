@@ -1,7 +1,7 @@
 *.pyc
 *.log
 blog_project/_pycache
-blog_project/settings/dev.py
+blog_project/settings/prod.py
 LICENSE.txt
 README.md
 .vscode
@@ -11,9 +11,17 @@ blog_project/asgi.py
 .pipenv-version
 env/
 blog_cache/
-
+Procfile
 blog/tests
-slugignore.txt
+runtime.txt
 blog.log
+requirements.txt
+slugignore.txt
+.env
+media
+migrations
+blog/media
+blog/templates
+blog/static
 
 
