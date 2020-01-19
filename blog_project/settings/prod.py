@@ -9,7 +9,7 @@ DEBUG = False
 SECRET_KEY = config('SECRET_KEY')
 
 #production host
-ALLOWED_HOSTS = ['xtentionblog.herokuapp.com']
+ALLOWED_HOSTS = ['xtensionblog.herokuapp.com']
 
 
 AUTHENTICATION_BACKENDS += [
