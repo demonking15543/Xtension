@@ -5,11 +5,11 @@ from  decouple import config
 
 
 DEBUG = False
-#SECRET_KEY = '*z!vk$p+ep8pu@o6#pgivu%)#-bfnui(5@(azk2bv1)$wbvlcd'
+
 SECRET_KEY = config('SECRET_KEY')
 
 #production host
-ALLOWED_HOSTS = ['xtensionblog.herokuapp.com']
+ALLOWED_HOSTS = ['xtentionblog.herokuapp.com']
 
 
 AUTHENTICATION_BACKENDS += [
@@ -23,11 +23,11 @@ AUTHENTICATION_BACKENDS += [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dfe2s7ni7l3jmq',
-        'USER': 'bszaqvyawctsvy',
+        'NAME': '',
+        'USER': '',
 
-        'PASSWORD': '27d7bcd9d800a26cb5de6b9061768a44b6837310bb78619deabf26dbebc147ec',
-        'HOST': 'ec2-174-129-254-223.compute-1.amazonaws.com',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': '5432',
     }
     
