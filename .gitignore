@@ -16,8 +16,5 @@ blog/migrations
 blog/tests
 slugignore.txt
 blog.log
-media/
-blog/media/
-runtime.txt
-requirements.txt
+
 
